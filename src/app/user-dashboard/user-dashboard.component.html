@@ -1,0 +1,10 @@
+<h1>Dashboard</h1>
+<p>
+  Last Update: {{ lastUpdated | date:'mediumTime' }}
+</p>
+<p>
+  Total items: {{ users.length }}
+</p>
+<p>
+  <button mat-raised-button color="primary" (click)="clearUsers()">Delete All</button>
+</p>

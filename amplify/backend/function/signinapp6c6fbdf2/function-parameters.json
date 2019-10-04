@@ -1,0 +1,25 @@
+{
+    "permissions": {
+        "hosting": {
+            "S3AndCloudFront": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        },
+        "auth": {
+            "signinapp3b3aa8f8": [
+                "create"
+            ]
+        },
+        "storage": {
+            "dynamod9318c1c": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    }
+}

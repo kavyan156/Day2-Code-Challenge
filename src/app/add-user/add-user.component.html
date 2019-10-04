@@ -1,0 +1,29 @@
+
+<form  #AddUser="ngForm" autocomplete="off" (ngSubmit)="addUser(AddUser)" novalidate>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Name" name="name" ngModel>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" name="email" ngModel>
+  </mat-form-field>
+  <button mat-raised-button color="primary" >Add User</button>
+</form>
+<hr>
+
+<table>
+  <tr>
+    <th> ID </th>
+    <th>Name</th>
+    <th>Email</th>
+    <th> </th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td> {{user.id}}</td>
+    <td>{{user.title.name}}</td>
+    <td>{{user.title.email}}</td>
+    <td> <button mat-raised-button (click)="removeUser(user)" color="primary" >Remove User</button></td>
+  </tr>
+</table>
+
+<hr>
+<app-user-dashboard></app-user-dashboard>

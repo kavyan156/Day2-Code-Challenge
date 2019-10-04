@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "sign-in-app-dev-20191003230310-authRole",
+            "UnauthRoleArn": "arn:aws:iam::504523337821:role/sign-in-app-dev-20191003230310-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::504523337821:role/sign-in-app-dev-20191003230310-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "sign-in-app-dev-20191003230310-deployment",
+            "UnauthRoleName": "sign-in-app-dev-20191003230310-unauthRole",
+            "StackName": "sign-in-app-dev-20191003230310",
+            "StackId": "arn:aws:cloudformation:us-east-1:504523337821:stack/sign-in-app-dev-20191003230310/dee83100-e603-11e9-ab4b-0a1726208052"
+        },
+        "categories": {
+            "auth": {
+                "signinapp3b3aa8f8": {}
+            }
+        }
+    }
+}

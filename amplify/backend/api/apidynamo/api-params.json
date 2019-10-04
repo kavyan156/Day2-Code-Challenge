@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "name": "/users",
+            "lambdaFunction": "signinapp6c6fbdf2",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            }
+        }
+    ],
+    "resourceName": "apidynamo",
+    "apiName": "apidynamo",
+    "functionArns": [
+        {
+            "lambdaFunction": "signinapp6c6fbdf2"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "sign-in-app-dev-20191003230310-authRole",
+        "unAuthRoleName": "sign-in-app-dev-20191003230310-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "signinapp6c6fbdf2",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

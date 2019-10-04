@@ -1,0 +1,14 @@
+
+<app-header></app-header>
+
+<main>
+  <table>
+    <tr>
+      <th><app-dynamo-db-users></app-dynamo-db-users></th>
+      <th><button mat-raised-button color="primary" [routerLink]="['/list-user']" routerLinkActive="router-link-active" > GraphQL-Users</button></th>
+      <th><button mat-raised-button color="primary" [routerLink]="['/add-user']" routerLinkActive="router-link-active" > Redux-Managing-Users</button></th>
+    </tr>
+  </table>
+</main>
+<router-outlet>
+</router-outlet>
